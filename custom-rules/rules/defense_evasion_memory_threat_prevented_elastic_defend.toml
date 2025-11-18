@@ -1,7 +1,7 @@
 [metadata]
 creation_date = "2025/11/18"
 integration = ["endpoint"]
-maturity = "development"
+maturity = "production"
 updated_date = "2025/11/18"
 
 [rule]
@@ -10,7 +10,7 @@ author = ["Elastic"]
 description = """
 Generates a detection alert each time an Elastic Defend alert for memory signatures are received. Enabling this rule
 allows you to immediately begin investigating your Endpoint memory signature alerts. This rule identifies Elastic Defend
-memory signature preventions only, and does not include detection only alerts.
+memory signature preventions only, and does not include detection only .
 """
 enabled = false
 false_positives = []

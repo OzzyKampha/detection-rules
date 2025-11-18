@@ -1,1 +1,14 @@
-{}
+{
+  "06f3a26c-ea35-11ee-b417-f661ea17fbce": {
+    "rule_name": "Memory Threat - Prevented- Elastic Defend",
+    "sha256": "e8aebcd28f953545a0b0c7e3e34ce44c88b4bd19b65743a970254e6cbc51e75d",
+    "type": "query",
+    "version": 1
+  },
+  "b4d0df7a-ce16-4ac8-924a-8b88dbaa41af": {
+    "rule_name": "ges",
+    "sha256": "c4003a4c67d52340d3f13167bbb564f6026177138e98c666065c2da7e8200183",
+    "type": "query",
+    "version": 1
+  }
+}

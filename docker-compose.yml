@@ -1,0 +1,14 @@
+services:
+  detection_rules:
+    
+    build: 
+      dockerfile: dockerfile
+    image: aasmuk13/detection_rules
+    volumes:
+      - ./:/detection_rules
+    stdin_open: true
+    tty: true
+    command: bash
+    network_mode: host 
+    environment:
+      - CUSTOM_RULES_DIR=custom-rules
