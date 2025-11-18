@@ -14,7 +14,7 @@ rule_dirs:
 testing:
   config: etc/test_config.yaml
 
-bypass_version_lock: True
+bypass_version_lock: false
 normalize_kql_keywords: True
 auto_gen_schema_file: "etc/schemas/auto_gen.json"
 bypass_optional_elastic_validation: True
