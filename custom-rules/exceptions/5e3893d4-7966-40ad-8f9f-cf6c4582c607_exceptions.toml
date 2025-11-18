@@ -1,0 +1,32 @@
+[metadata]
+creation_date = "2025/11/18"
+list_name = "Exceptions for rule - ges"
+rule_ids = ["b4d0df7a-ce16-4ac8-924a-8b88dbaa41af"]
+rule_names = ["ges"]
+updated_date = "2025/11/18"
+
+[[exceptions]]
+
+[exceptions.container]
+description = "Exception list containing exceptions for rule with id: 14870a00-37bc-4427-9fb7-bc8dfd0a3383"
+list_id = "5e3893d4-7966-40ad-8f9f-cf6c4582c607"
+name = "Exceptions for rule - ges"
+namespace_type = "single"
+tags = ["default_rule_exception_list"]
+type = "rule_default"
+
+[[exceptions.items]]
+comments = []
+description = "Exception list item"
+list_id = "5e3893d4-7966-40ad-8f9f-cf6c4582c607"
+item_id = "5017761c-02e0-4b6a-8efb-bd41a0601b4a"
+name = "test-"
+namespace_type = "single"
+tags = []
+type = "simple"
+
+[[exceptions.items.entries]]
+field = "_id"
+type = "match"
+operator = "included"
+value = "e"

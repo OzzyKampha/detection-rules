@@ -1,0 +1,62 @@
+[metadata]
+creation_date = "2025/11/18"
+integration = []
+maturity = "development"
+updated_date = "2025/11/18"
+
+[rule]
+actions = []
+author = ["elastic"]
+description = "te"
+enabled = true
+false_positives = []
+filters = []
+from = "now-6m"
+index = [
+    "apm-*-transaction*",
+    "auditbeat-*",
+    "endgame-*",
+    "filebeat-*",
+    "logs-*",
+    "packetbeat-*",
+    "traces-apm*",
+    "winlogbeat-*",
+    "-*elastic-cloud-logs-*",
+]
+interval = "5m"
+language = "kuery"
+license = ""
+max_signals = 100
+name = "ges"
+references = []
+related_integrations = []
+required_fields = []
+risk_score = 21
+risk_score_mapping = []
+rule_id = "b4d0df7a-ce16-4ac8-924a-8b88dbaa41af"
+setup = ""
+severity = "low"
+severity_mapping = []
+tags = []
+threat = []
+to = "now"
+type = "query"
+
+query = '''
+agent.id : "1f845e53-9768-4b3c-b9ee-806931a06b40"
+'''
+
+
+[[rule.exceptions_list]]
+id = "5dcd04f7-aa3f-4656-a0fd-a1ac68be1138"
+list_id = "5e3893d4-7966-40ad-8f9f-cf6c4582c607"
+namespace_type = "single"
+type = "rule_default"
+
+[rule.alert_suppression]
+group_by = ["agent.id"]
+missing_fields_strategy = "suppress"
+
+[rule.meta]
+kibana_siem_app_url = "https://localhost:5601/app/security"
+
